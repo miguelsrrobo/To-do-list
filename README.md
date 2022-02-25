@@ -1,4 +1,4 @@
-# Todo list
+# To-do list
 a very simple text mode to-do list
 
 ## Getting started
