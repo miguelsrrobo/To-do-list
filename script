@@ -1,0 +1,7 @@
+# Função PRÓPRIAS
+export TODO="${HOME}/Documentos/todo.txt"
+# Cria e lista as tarefas
+tla() { [ $# -eq 0] && cat $TODO || echo "$(echo $* | md5sum | cut -c 1-4) -> $*" >> $TODO ;}
+
+# Remove a tarefa do todo.txt
+tlr() { sed -i "/^$*/d" $TODO;}
